@@ -3,25 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Music Playlist Explorer</title>
+
+    <title>Welcome to Music Paradise!</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <!-- Your header content here -->
+        <h1 id="headliner">Music Playlist Explorer</h1>
+        <div class="nav-buttons">
+            <button class="feature-btn">
+                <a href="featured.html">Featured</a>
+            </button>
+            <button class="all-btn">
+                <p>All</p>
+            </button>
+            <button class="newplaylist-btn">
+                <p>New Playlist</p>
+            </button>
+            <input class="search-bar" type="text" placeholder="Explore playlists">
+        </div>
     </header>
-
-    <main> 
-        <!-- Your main content here -->
+    <main>
+        <div class="wrapper"></div>
     </main>
+    <div id="playlist-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="spacing">
+                <div class="modal-header">
+                    <img id="playlist-image" src="assets/img/playlist.png" alt="Festival Image" id="playlist-image-clicked">
+                    <div id="titles">
+                        <h1 id="playlist-title">Playlist title</h1>
+                        <h2 id="creator-name">Creator Name</h2>
+                    </div>
+                </div>
+                <div id="shuffle-btn">
+                    <button id="shuffle">Shuffle</button></div>
+                <div id="info-box">
 
-    <footer>
-        <!-- Your footer content here -->
-    </footer>
+                </div>
+                    
+            
+            </div>
+                
+        </div>
+    </div>
+    <footer></footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
