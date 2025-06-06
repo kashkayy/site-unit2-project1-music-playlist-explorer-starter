@@ -260,7 +260,7 @@ footer{
     flex-direction: column;
     column-gap: 15px;
     flex-wrap: wrap;
-    border-style: dotted;
+    border-style: solid;
     border-color: #888;
     border-right: none;
     border-left: none;
@@ -279,7 +279,13 @@ footer{
 #song-details{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    justify-content: center;
+    column-gap: 0px;
+    width: 30%;
+    height: 0%;
+}
+#song-details p{
+    margin: 2px;
 }
 #song-name{
     margin: 0;
@@ -294,12 +300,15 @@ footer{
     align-items: center;
     font-size: 23px;
 } */
-    
+#song-duration{
+    margin-bottom: 10px;
+}    
 
 /* .modal.show{
    pointer-events: auto;
    opacity: 1;
 } */
+
 .close {
    color: #888;
    float: right;

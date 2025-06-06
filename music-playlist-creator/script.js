@@ -10,6 +10,7 @@ const playlistTitle = document.getElementById('playlist-title');
 const creatorName = document.getElementById('creator-name');
 const playlistImage = document.getElementById('playlist-image');
 const shuffleBtn = document.createElement('button');
+const songDuration = document.createElement('song-duration')
 playlists.forEach((playlist, playlistIndex) => {
   const article = document.createElement('article');
   article.classList.add('play');
@@ -75,6 +76,7 @@ cards.forEach((card) => {
             <div id="song-details">
             <p id="song-name">${song.title}</p>
             <p id="artist-name">${song.artist}</p>
+            <p id="song-duration">${song.duration}</p>
             </div>
         </div>
       `;

@@ -21,6 +21,7 @@ playlist.songs.forEach((song) => {
             <div id="song-details">
             <p id="song-name">${song.title}</p>
             <p id="artist-name">${song.artist}</p>
+            <p id="song-duration">${song.duration}</p>
             </div>
       </div>
     `;
