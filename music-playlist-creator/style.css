@@ -22,7 +22,7 @@ header{
     margin-top: 35px;
     justify-content: center;
 }
-.feature-btn{
+.feature{
     margin-right: 30px;
     font-weight: bold;
     cursor: pointer;
@@ -30,7 +30,15 @@ header{
     background-color:  rgb(29, 185, 84);
     font-size: 13.5px;
 }
-.feature-btn:hover{
+.feature:hover{
+    color: rgb(0, 145, 255);
+}
+#feature-btn{
+    text-decoration: none;
+    color: black;
+}
+#feature-btn:hover{
+    text-decoration: none;
     color: rgb(0, 145, 255);
 }
 .all-btn{
@@ -188,9 +196,10 @@ footer{
    padding: 20px;
    border: 1px solid #888;
    position: relative;
-   height: 75%;
+   height: 90%;
    width: 80%; /* Could be more or less, depending on screen size */
    border-radius: 10px;
+   overflow: scroll;
 }
 #spacing{
     padding: 23px;
@@ -225,7 +234,7 @@ footer{
     margin-top: 30px;
     width: 10%;
     height: 0%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 #shuffle{
     padding: 8px 16px;
@@ -243,11 +252,18 @@ footer{
     color: rgb(29, 185, 84);
     border-color: solid rgb(29, 185, 84);
 }
-
+#info-box{
+    object-fit: cover;
+}
 .song-list{
     display: flex;
     flex-direction: column;
     column-gap: 15px;
+    flex-wrap: wrap;
+    border-style: dotted;
+    border-color: #888;
+    border-right: none;
+    border-left: none;
 }
 #song-info{
     display: flex;
@@ -271,12 +287,6 @@ footer{
 }
 .artist-name{
     margin: 3px 0 0;
-}
-/* #playlistTitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 29px;
 }
 #creatorName{
     display: flex;
