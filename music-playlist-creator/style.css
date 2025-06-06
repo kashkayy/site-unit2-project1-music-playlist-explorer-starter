@@ -89,6 +89,7 @@ header{
     background-color: black;
 }
 .play{
+    position: relative;
     margin: 20px;
     display: flex;
     height: 450px;
@@ -99,12 +100,24 @@ header{
     border: solid rgb(29, 185, 84);
     border-radius: 25px;
     cursor: pointer;
+    /* overflow: hidden; */
 }
-.play:hover{
-    border-color: rgb(29, 185, 84);
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: box-shadow 0.15s;
+.del-button{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(29, 185, 84);
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+}
+.del-button:hover{
+    color: black;
+}
+#playlist-modal .del-button{
+    display: none;
 }
 .playlist-info{
     display: flex;
@@ -124,6 +137,12 @@ header{
     border-radius: 25px;
     border-color: solid rgb(29, 185, 84);
 }
+.play:hover{
+    border-color: rgb(29, 185, 84);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: box-shadow 0.15s;
+}
 .heart-button{
     border: none;
     cursor: pointer;
@@ -137,6 +156,7 @@ header{
 }
 .fa-regular.fa-heart:active{
     background-color: black;
+    transition: background-color 2.00s;
 }
 .fa-solid{
      color: black;
@@ -158,7 +178,7 @@ footer{
 .modal {
    display: none; 
    position: fixed; 
-   z-index: 1; 
+   z-index: 2; 
    left: 0;
    top: 0;
    width: 100%; 

@@ -18,6 +18,7 @@ playlists.forEach((playlist, playlistIndex) => {
   article.dataset.playlist = playlistIndex;
   article.innerHTML = `
     <img class="playlistpreview" src="${playlist['art']}" />
+    <button class="del-button"><i class="fa-regular fa-trash"></i></button>
     <div class="playlist-info">
         <h3>${playlist['title']}</h3>
         <p>${playlist['author']}</p>
@@ -27,6 +28,10 @@ playlists.forEach((playlist, playlistIndex) => {
     `;
 
   wrapper.appendChild(article);
+  article.querySelector('.del-button').addEventListener('click', (event) => {
+    event.stopPropagation();
+    article.remove();
+})
 });
 // icon functionality and interactivity
 const heartButtons = document.querySelectorAll('.heart-button');
