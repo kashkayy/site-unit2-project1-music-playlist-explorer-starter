@@ -129,7 +129,7 @@ function shuffle_function(array) {
       array[randomIndex], array[currentIndex]];
   }
 } 
-    closeBtn.addEventListener('click', () => {
+closeBtn.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
