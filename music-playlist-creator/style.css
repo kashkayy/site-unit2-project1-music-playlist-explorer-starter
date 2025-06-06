@@ -7,7 +7,6 @@ body {
     background-color: #f8f8f8;
     height: 100%;
     box-sizing: border-box;
-
 }
 header{
     display: flex;
@@ -15,9 +14,15 @@ header{
     background-color: rgb(29, 185, 84);
     height: 75px;
 }
+#headliner{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    font-size: 25px;
+    justify-content: center;
+}
 .navbuttons{
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: column;
     margin-top: 35px;
     justify-content: center;
@@ -73,33 +78,16 @@ header{
 .search-bar:active{
     border: rgb(29, 185, 84);
 }
-#headliner{
-    display: flex;
-    flex-direction: column;
-    margin-left: 35px;
-    font-size: 25px;
-    justify-content: center;
-}
-
-
-
 .wrapper{
     display: flex;
-    /* height: 714px; */
     flex-wrap: wrap;
-    /* width: 600px; */
     flex-direction: row;
-    /* padding: 30px; */
     justify-content: center;
-    /* gap: 20px; */
-    /* padding-left: 20px;
-    padding-top: 20px; */
     padding: 20px;
     width: 100%;
     gap: 50px;
     background-color: black;
 }
-
 .play{
     margin: 20px;
     display: flex;
@@ -111,6 +99,12 @@ header{
     border: solid rgb(29, 185, 84);
     border-radius: 25px;
     cursor: pointer;
+}
+.play:hover{
+    border-color: rgb(29, 185, 84);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: box-shadow 0.15s;
 }
 .playlist-info{
     display: flex;
@@ -147,12 +141,6 @@ header{
 .fa-solid{
      color: black;
 }
-.play:hover{
-    border-color: rgb(29, 185, 84);
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: box-shadow 0.15s;
-}
 .playlistpreview{
     width : 100%;
     height: 280px;
@@ -167,23 +155,16 @@ footer{
     height: 36px;
 }
 
-/* .playlistDetails {
-    background-color: rgb(29, 185, 84);
-    justify-content: left;
-    
-
-} */
 .modal {
-   display: none; /* Hidden by default */
-   position: fixed; /* Stay in place */
-   z-index: 1; /* Sit on top */
+   display: none; 
+   position: fixed; 
+   z-index: 1; 
    left: 0;
    top: 0;
-   width: 100%; /* Full width */
-   height: 100%; /* Full height */
-   overflow: auto; /* Enable scroll if needed */
-   /* background-color: rgb(0,0,0); */
-   background-color: rgba(140, 135, 135, 0.4); /* Black w/ opacity */
+   width: 100%; 
+   height: 100%; 
+   overflow: auto; 
+   background-color: rgba(140, 135, 135, 0.4); 
    justify-content: center;
    align-items: center;
    border-radius: 10px;
@@ -191,13 +172,13 @@ footer{
 }
 .modal-content {
    background-color: black;
-   margin: 20% auto; /* 15% from the top and centered */
+   margin: 20% auto; 
    color: #f8f8f8;
    padding: 20px;
    border: 1px solid #888;
    position: relative;
    height: 90%;
-   width: 80%; /* Could be more or less, depending on screen size */
+   width: 80%; 
    border-radius: 10px;
    overflow: scroll;
 }
@@ -303,12 +284,6 @@ footer{
 #song-duration{
     margin-bottom: 10px;
 }    
-
-/* .modal.show{
-   pointer-events: auto;
-   opacity: 1;
-} */
-
 .close {
    color: #888;
    float: right;

@@ -1,3 +1,4 @@
+// data gotten from Metamate and chatGPT
 const playlists = [
   { id: 1,
     title: "Summer Vibes",

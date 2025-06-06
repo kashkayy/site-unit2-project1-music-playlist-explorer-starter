@@ -3,13 +3,13 @@ body{
 }
 .modal-content {
    background-color: white;
-   margin: 20% auto; /* 15% from the top and centered */
+   margin: 20% auto; 
    color: #f8f8f8;
    padding: 20px;
    border: 1px solid #888;
    position: relative;
    height: 75%;
-   width: 80%; /* Could be more or less, depending on screen size */
+   width: 80%;
    border-radius: 10px;
 }
 #spacing{
@@ -94,11 +94,6 @@ body{
     object-fit: cover;
     border-radius: 5px;
 }
-/* #song-details{
-    display: flex;
-    flex-direction: column;
-    gap: 5px; */
-
 #song-name{
     margin: 0;
     font-weight: bold;

@@ -11,6 +11,7 @@ const creatorName = document.getElementById('creator-name');
 const playlistImage = document.getElementById('playlist-image');
 const shuffleBtn = document.createElement('button');
 const songDuration = document.createElement('song-duration')
+// Assigning data to playlist-info
 playlists.forEach((playlist, playlistIndex) => {
   const article = document.createElement('article');
   article.classList.add('play');
@@ -27,7 +28,7 @@ playlists.forEach((playlist, playlistIndex) => {
 
   wrapper.appendChild(article);
 });
-
+// icon functionality and interactivity
 const heartButtons = document.querySelectorAll('.heart-button');
 const likeCounts = document.querySelectorAll('.likecount');
 heartButtons.forEach((button, index) => {
@@ -50,10 +51,10 @@ heartButtons.forEach((button, index) => {
     }
   });
 });
-
+// Setting up modal functionality
 const cards = document.querySelectorAll('.play');
 const songImg = document.getElementById('song-img');
-
+//looping through each card
 cards.forEach((card) => {
   card.addEventListener('click', () => {
     modal.style.display = 'flex';
@@ -63,8 +64,6 @@ cards.forEach((card) => {
     playlistTitle.textContent = playlist.title;
     creatorName.textContent = playlist.author;
     playlistImage.src = playlist.art;
-    // const shuffleBtnDiv = document.createElement('div');
-    // shuffleBtnDiv.id = 'shuffle-btn';
     shuffleBtn.id = 'shuffle'
     songsLst.innerHTML = '';
     playlist.songs.forEach((song) => {
@@ -87,14 +86,12 @@ cards.forEach((card) => {
     document.querySelector('#shuffle').addEventListener('click', () => {
         const songsLst = document.getElementById('info-box');
         console.log(songsLst.children);
-        // const songs = Array.from(songsLst.children);
         songsLst.innerHTML = '';
-        // grab the modal from the DOM
-        // get the id from the modal
+        // Grab the modal from the DOM
+        // Get the id from the modal
         const modalContentId = document.querySelector('.modal-content').id
         console.log(modalContentId);
-        
-        // set playlist variable to playlists[modal id]
+        // Set playlist variable to playlists[modal id]
         let playlist = playlists[parseInt(modalContentId) - 1];
         let copy =[...playlist.songs]
         shuffle_function(copy)

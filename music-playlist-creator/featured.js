@@ -1,4 +1,3 @@
-console.log(playlists);
 const playlistTitle = document.getElementById('playlist-title');
 const creatorName = document.getElementById('creator-name');
 const playlistImage = document.getElementById('playlist-image');
