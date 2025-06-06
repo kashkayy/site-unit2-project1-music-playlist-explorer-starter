@@ -10,10 +10,11 @@ const creatorName = document.getElementById('creator-name');
 const playlistImage = document.getElementById('playlist-image');
 let currentPlaylist = null;
 function arrayShuffle(array){
-    const copy = [array];
-    for (let i = 0; i < copy.length; i++){
-        const randIndex = Math.floor(Math.random() * (i+1));
-        [copy[i], copy[j] = copy[j], copy[i]];
+    let currentIndex = array.length;
+    let randomIndex;
+    while (currentIndex != 0){
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        [array[]]
     }
 }
 playlists.forEach((playlist, playlistIndex) => {

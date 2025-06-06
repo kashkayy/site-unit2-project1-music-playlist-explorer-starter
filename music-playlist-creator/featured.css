@@ -1,0 +1,106 @@
+body{
+  background-color: rgb(29, 185, 84);
+}
+.modal-content {
+   background-color: black;
+   margin: 20% auto; /* 15% from the top and centered */
+   color: #f8f8f8;
+   padding: 20px;
+   border: 1px solid #888;
+   position: relative;
+   height: 75%;
+   width: 80%; /* Could be more or less, depending on screen size */
+   border-radius: 10px;
+}
+#spacing{
+    padding: 23px;
+}
+.modal-header{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between; 
+    align-items: start;
+}
+#playlist-image{
+  border-radius: 10px;
+  object-fit: cover;
+  width: 15%;
+  height: 10%;
+  margin-left: 80px;
+}
+#titles{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+}
+#playlist-title{
+  text-align: center;  
+  margin: 0px;
+}
+#creator-name{
+    text-align: center;
+    margin: 0px;
+}
+#playlist-container{
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #f8f8f8;
+}
+#shuffle-btn{
+    margin-top: 30px;
+    width: 10%;
+    height: 0%;
+    margin-bottom: 60px;
+}
+#shuffle{
+    padding: 8px 16px;
+    background-color: rgb(29, 185, 84);
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+}
+#shuffle:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: black;
+    color: rgb(29, 185, 84);
+    border-color: solid rgb(29, 185, 84);
+}
+
+.song-list{
+    display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+}
+#song-info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#song-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#song-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#song-name{
+    margin: 0;
+    font-weight: bold;
+}
+.artist-name{
+    margin: 3px 0 0;
+}
