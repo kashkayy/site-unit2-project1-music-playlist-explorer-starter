@@ -14,6 +14,9 @@ header{
     background-color: rgb(29, 185, 84);
     height: 75px;
 }
+main{
+    height: 100%;
+}
 #headliner{
     display: flex;
     flex-direction: column;
