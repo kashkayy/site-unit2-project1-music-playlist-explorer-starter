@@ -143,15 +143,15 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
 Add your response here
-
+Yes they did to an extent. The components needed to complete this project were discussed in the lab but weren't  explained on how to combine them to form an actual project.
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
 Add your response here
-
+I would have spent more time on the backend side of the project as well as research various methods and concepts in javascript. This week was the first time i wrote a line of html and css code! I am excited for the next week even though it might be more fast-paced.
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
 Add your response here
-
+I feel like I enjoy css a lot more than html and javascript. I didnt think such small features like sorting would take time (explains why it was a stretch feature)
 ### Open-source libraries used
 
 - Add any links to open-source libraries used in your project.
