@@ -114,7 +114,7 @@ header{
     border: none;
 }
 .del-button:hover{
-    color: black;
+    color: rgb(229, 28, 28);
 }
 #playlist-modal .del-button{
     display: none;
